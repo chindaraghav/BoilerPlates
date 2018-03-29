@@ -23,4 +23,4 @@ nodemailer.createTestAccount((err,account) => {
         }
         console.log("Sent! "+info.messageId);
     })
-}
+})
