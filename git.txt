@@ -1,0 +1,33 @@
+git init ---to initialize
+git status ---to check status 	
+git add filename---to add a file
+git diff -- to check the diffrences in the staging area and the main file
+git commit-- to permanently store changes from the staging area inside the repository
+		git commit -m "YOU CAN WRITE GIT MESSAGES IN THIS!"
+git log -- to refer to other version of a project
+
+
+			HOW TO BACKTRACK
+
+git show HEAD-- it will show the log for the head commit
+git checkout HEAD filename-- when you changed the file but want to discard the change
+git add filename1 filename - when you want to add multiple files concurrently 
+git reset HEAD filename-- will reset to the orignal file in the HEAD commit
+git reset _7Characters from the log commit id_--used to get back to a particular doc
+git branch-- is used to see which branch you are on rn
+	(*) show where are you
+git branch new_branch to create a new branch
+git checkout branchName-- it is used to change the branch 
+		every commit master will have the child branch will inherit them
+git merge-- if you want to add all the changes made in the child branch to the master branch 
+	then you can use git merge
+git branch -d branchName -- You create them to 
+				work on a new project
+				 feature, but the end goal 
+				is to merge that feature into 
+				the master branch. After the 
+				branch has been integrated into 
+			master, it has served its purpose and can be deleted.
+git clone remote_location clone_name to clone a file from one location to our location
+git remote -v will tell the origin from where file was cloned 
+git fetch will bring all the changes not merging them but it will show them all

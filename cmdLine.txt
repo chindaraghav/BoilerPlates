@@ -1,0 +1,64 @@
+pwd -> print work directory
+cd ->  change directory
+cd..-> to go one directory back
+cd../-> go back and goto this -
+mkdir -> --make directory
+ls -> list all the files in the current directory
+touch fileName to create a file
+ls -a ->The -a modifies the behavior of the ls command to also list the files and directories starting with a dot (.)
+	hidden files appear with this
+ls -l -> lists files in form of table with some info
+ls -alt -> orders files by the time they were modified
+cp fileName1 fileName2 -> copies the contents of f1 to f2
+	cp biopic/cleopatra.txt historical/ also use for copying file from one to other
+	cp biopic/ray.txt biopic/notorious.txt historical/ copy more than one file
+cp * dirName/ will copy all to the directory
+
+cp m*.txt/dirName copy all whose name starting with m
+mv ->will move to specific directory works same as cd
+rm -> remove the 
+echo -> used to print certain stuff written in quotes
+echo "	" > fileName will write the quote in the file > sylbol will help
+> -> this symbol will take the output from the left and put into the right one
+cat fileName1 > fileName2 will make a new file fileName2 and put all the content of fileName1
+				to fileName1
+cat fileName1 >> fileName2 will find fileName2 and then append all the content into 2
+
+cat can also be used to view the content of the file
+< takes the standard input from the file on the right and inputs it into the program on the left
+
+| is a "pipe". The | takes the standard output of the command on the left, and pipes it as standard input to the command on the right.
+uniq filters out the uniq components in the file
+
+grep stands for "global regular expression print". It searches files for lines that match a pattern and returns the results
+
+grep -i will not be case sensitive
+
+grep -R searches all files in a directory and outputs filenames and lines containing matched results. -R stands for "recursive".
+
+grep -Rl searches all files in a directory and outputs only filenames
+
+sed stands for "stream editor". It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to "find and replace".
+	sed 's/snow/rain/' forests.txt
+		s is substitution snow string to find rain string to be replaced
+
+nano hello.txt nano is a command line text editor
+
+nano ~/.bash_profile->
+
+~/.bash_profile is the name of file used to store environment settings. It is commonly called the "bash profile". When a session starts, it will load the contents of the bash profile before executing commands.
+	~ represents the user's home directory
+	. indicates a hidden file
+	The command nano ~/.bash_profile opens up ~/.bash_profile in nano.
+	The text echo "Welcome, Jane Doe" creates a greeting in the bash profile, which is saved. It tells the command line to echo the string "Welcome, Jane Doe" when a terminal session begins.
+	The command source ~/.bash_profile activates the changes in ~/.bash_profile for the current session. Instead of closing the terminal and needing to start a new session, source makes the changes available right away in the session we are in.
+
+alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands.
+			alias pd="pwd"
+	The command source ~/.bash_profile makes the alias pd available in the current session.
+
+export USER="Jane Doe"
+		environment variables are variables that can be used across commands and programs and hold information about the environment.
+		The line export makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs
+		$ is always used when returning a variable's value
+The env command stands for "environment", and returns a list of the environment variables for the current user
